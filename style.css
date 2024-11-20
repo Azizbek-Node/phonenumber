@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+
+.main.dark {
+  background-color: #222;
+  color: #fff;
+}
+
+.main.dark::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 1);
+  z-index: -1;
+}
+.title {
+  font-size: 10vw;
+}
+.btn {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+.btn:hover {
+  background-color: #00ff3c;
+  transform: scale(1.1);
+}
+.btn:active {
+  background-color: #ff002f;
+  transform: scale(1);
+}
+
+.dark-mode {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.dark-mode.dark-mode {
+  background-color: #007bff;
+}
+
+.dark-mode:hover {
+  background-color: #ff8800;
+  transform: scale(1.1);
+}
+
+.dark-mode:active {
+  transform: scale(1);
+}
+
+.add-tel {
+  position: absolute;
+  right: 20px;
+  top: 80px;
+  font-size: 16px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.add-tel:hover {
+  background-color: #ff8800;
+  transform: scale(1.1);
+}
+
+.add-tel:active {
+  transform: scale(1);
+}
+
+.phone-list {
+  position: fixed;
+  top: 30%;
+  left: 0;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.7);
+  color: black;
+  padding: 10px;
+  border-radius: 5px;
+  display: none;
+}
+.phone-item {
+  font-size: 16px;
+  color: black;
+}
+.show-tel {
+  top: 20px;
+  left: 20px;
+  position: absolute;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.show-tel:hover {
+  background-color: #ff8800;
+  transform: scale(1.1);
+}
+
+.show-tel:active {
+  transform: scale(1);
+}
